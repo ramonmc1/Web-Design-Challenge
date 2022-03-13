@@ -16,8 +16,12 @@
     <div class="container-fluid">
       <div class="float-md-start">
 
-        <span class="navbar-brand p-2 mb-0 bg-info text-white h1">Lattitude</span>
-       <!-- <h3 class="p-2 mb-0 bg-info text-white">Latitude</h3> -->
+        <a class="navbar-brand p-2 mb-0 bg-info text-white h1" href="index.html">Lattitude</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="False" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
       </div>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -38,7 +42,7 @@
               <li><a class="dropdown-item" href="index_1.html">Max Temperature</a></li>
               <li><a class="dropdown-item" href="index_2.html">Humidity</a></li>
               <li><a class="dropdown-item" href="index_3.html">Cloudiness</a></li>
-              <li><a class="dropdown-item" href="index_4.html">Wind Speed</a></li>
+              <li><a class="dropdown-item disabled" href="index_2.html" tabindex="-1" aria-disabled="true">Wind Speed</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -58,23 +62,12 @@
         <div class="col-md-8">
           <div class="p-3 bg-white border">
             <div class="container" style="background-color: #ffffff;">
-              <h2 class="display-6 text-info">Summary: Latitude vs. X</h2>
+              <h2 class="display-6 text-info">Wind Speed</h2>
               <hr class="my-4">
 
-              <div class="clearfix"><img width ="300" src="Resources/assets/images/Fig1.png"
-                  class="float-left" alt="fig1">
-
-
-                <p>The purpose of this project was to analyze how weather changes
-                  as you get closer to the equator. To accomplish this analysis, we
-                  first pulled data from the OpenWeatherMap API to assemble a
-                  dataset on over 500 cities.</p>
-                <p>After assembling the dataset, we used Matplotlib to plot various
-                  aspects of the weather vs. latitude. Factors we looked at included:
-                  temperature, cloudiness, wind speed, and humidity. This site provides the source data and
-                  visualizations created as part of the analysis, as well as explanations and descriptions of any
-                  trends and correlations witnessed.</p>
-              </div>
+              <img class="img-fluid" src="Resources/assets/images/Fig4.png" alt="fig1">
+                <p>For both, the northern and southern hemispheres, the linear correlation between wind speed and latitude is also poor. However, in the northern hemisphere, the highest average wind in higher at higher latitudes. In the southern hemisphere, you see the highest wind speeds between latitudes -40 and -15. More consistent, low wind speeds are seen closer to the equator.</p>
+              
             </div>
           </div>
         </div>
@@ -85,12 +78,13 @@
               <hr class="my-2">
               <div class="row">
                 <div class="col-md-6 col-sm-3">
+                  
                   <a class="link" href="index_1.html">
-                    <img class="img-fluid" src="Resources/assets/images/Fig1.png" alt="fig1"></a>
+                    <img class="img-fluid" src="Resources/assets/images/Fig1.png" alt="fig1" ></a>
                 </div>
                 <div class="col-md-6 col-sm-3">
                   <a class="link" href="index_2.html">
-                    <img class="img-fluid" src="Resources/assets/images/Fig2.png" alt="fig1"></a>
+                    <img class="img-fluid" src="Resources/assets/images/Fig2.png" alt="fig2"></a>
                 </div>
                 <div class="col-md-6 col-sm-3">
                   <a class="link" href="index_3.html">
@@ -98,10 +92,9 @@
                 </div>
                 <div class="col-md-6 col-sm-3">
                   <a class="link" href="index_4.html">
-                    <img class="img-fluid" src="Resources/assets/images/Fig4.png" alt="fig1"></a>
+                    <img class="img-fluid border border-info" src="Resources/assets/images/Fig4.png" alt="fig1"></a>
 
-
-               </div>
+                </div>
               </div>
             </div>
           </div>
